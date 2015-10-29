@@ -1,4 +1,4 @@
-Paycoin Core integration/staging tree
+Paycoin Core integration/staging tree 
 =====================================
 
 https://www.paycoin.com
