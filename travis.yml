@@ -1,0 +1,24 @@
+language: cpp
+
+compiler:
+    - clang
+    - gcc
+
+addons:
+    apt:
+        sources:
+            - bitcoin-bitcoin
+        packages:
+            - libboost-all-dev
+            - libssl-dev
+            - libdb4.8-dev
+            - libdb4.8++.dev
+            - libminiupnpc8-dev
+            - libminiupnpc8
+            - libqrencode-dev
+
+script:
+    - cd src
+    - make -f makefile.unix clean
+    - make -f makefile.unix test_paycoin
+    - ./test_paycoin
