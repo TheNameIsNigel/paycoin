@@ -17,6 +17,10 @@ addons:
             - libminiupnpc8
             - libqrencode-dev
 
+branches:
+    only:
+        - master
+
 script:
     - cd src
     - make -f makefile.unix clean
